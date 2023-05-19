@@ -15,6 +15,8 @@
 		044C52452A170E470028E305 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52442A170E470028E305 /* FirstAppUITests.swift */; };
 		044C52472A170E470028E305 /* FirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */; };
 		044C52542A170F040028E305 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52532A170F030028E305 /* FirstView.swift */; };
+		044C52562A1716AE0028E305 /* dealData.json in Resources */ = {isa = PBXBuildFile; fileRef = 044C52552A1716AE0028E305 /* dealData.json */; };
+		044C52582A1717650028E305 /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52572A1717650028E305 /* Carrot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		044C52442A170E470028E305 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		044C52532A170F030028E305 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		044C52552A1716AE0028E305 /* dealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dealData.json; sourceTree = "<group>"; };
+		044C52572A1717650028E305 /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				044C522B2A170E430028E305 /* ContentView.swift */,
 				044C52532A170F030028E305 /* FirstView.swift */,
 				044C522D2A170E470028E305 /* Assets.xcassets */,
+				044C52572A1717650028E305 /* Carrot.swift */,
 				044C522F2A170E470028E305 /* Preview Content */,
 			);
 			path = FirstApp;
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				044C52302A170E470028E305 /* Preview Assets.xcassets */,
+				044C52552A1716AE0028E305 /* dealData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			files = (
 				044C52312A170E470028E305 /* Preview Assets.xcassets in Resources */,
 				044C522E2A170E470028E305 /* Assets.xcassets in Resources */,
+				044C52562A1716AE0028E305 /* dealData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 			files = (
 				044C522C2A170E430028E305 /* ContentView.swift in Sources */,
 				044C52542A170F040028E305 /* FirstView.swift in Sources */,
+				044C52582A1717650028E305 /* Carrot.swift in Sources */,
 				044C522A2A170E430028E305 /* FirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
