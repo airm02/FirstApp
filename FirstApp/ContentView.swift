@@ -20,3 +20,14 @@ struct Reaction : Codable {
     var commentsCount : Int
     var heartsCount : Int
 }
+struct Author : Codable {
+    var location :String
+    var profileImageURL: String
+    var nickname : String
+    var mannerTemperature : Int
+}
+struct Product : Codable {
+    var price : Int
+    var category :String
+    var imageURLs :String
+}
