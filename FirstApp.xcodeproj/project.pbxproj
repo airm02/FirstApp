@@ -14,6 +14,7 @@
 		044C523B2A170E470028E305 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C523A2A170E470028E305 /* FirstAppTests.swift */; };
 		044C52452A170E470028E305 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52442A170E470028E305 /* FirstAppUITests.swift */; };
 		044C52472A170E470028E305 /* FirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */; };
+		044C52542A170F040028E305 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52532A170F030028E305 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		044C52402A170E470028E305 /* FirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C52442A170E470028E305 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		044C52532A170F030028E305 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				044C52292A170E430028E305 /* FirstAppApp.swift */,
 				044C522B2A170E430028E305 /* ContentView.swift */,
+				044C52532A170F030028E305 /* FirstView.swift */,
 				044C522D2A170E470028E305 /* Assets.xcassets */,
 				044C522F2A170E470028E305 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044C522C2A170E430028E305 /* ContentView.swift in Sources */,
+				044C52542A170F040028E305 /* FirstView.swift in Sources */,
 				044C522A2A170E430028E305 /* FirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
