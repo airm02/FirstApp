@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct Carrot: Codable {
-    var name : String
-    var time : String
-    var location : String
-    var price : String
+    var createdTime : String
+    var post : Post
+}
+struct Post : Codable {
+    var title : String
+    var content : String
+    var reaction : Reaction
+}
+struct Reaction : Codable {
+    var commentsCount : Int
+    var heartsCount : Int
 }
