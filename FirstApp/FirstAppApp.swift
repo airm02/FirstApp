@@ -11,7 +11,7 @@ import SwiftUI
 struct FirstAppApp: App {
     var body: some Scene {
         WindowGroup {
-            carrotRow()
+            carrotRow(carrot: carrots[0])
         }
     }
 }

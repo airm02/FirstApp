@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct carrotRow: View {
-    //
-    
+    var carrot: Carrot
     
     var body: some View {
-        
         
         HStack{
             Rectangle()
@@ -23,10 +21,11 @@ struct carrotRow: View {
                 .padding()
             
             VStack(alignment:.leading){
-                
-                Text("d")
-                Text("시각, 금액")
-            
+
+                Text(carrot.post.title)
+                Text(carrot.author.location)
+                Text("\(carrot.product.price) 원")
+                Text(carrot.createdTime)
             }
             Spacer()
         }
@@ -35,6 +34,6 @@ struct carrotRow: View {
 
 struct carrotRow_Previews: PreviewProvider {
     static var previews: some View {
-        carrotRow()
+        carrotRow(carrot: carrots[0])
     }
 }

@@ -9,39 +9,37 @@ import SwiftUI
 
 struct DetailView: View {
     
-    var carrot: Carrot
+    // carrot 프로포티 만들기
     
     var body: some View {
-        
-        HStack{
+        VStack{
             Rectangle()
-                .frame(width: 130, height: 130)
-                .cornerRadius(10)
+                .frame(width: 200, height: 200)
                 .foregroundColor(.gray)
             
-                .padding()
-            
             VStack(alignment:.leading){
-
-                Text(carrot.post.title)
-                Text(carrot.author.location)
-                Text("\(carrot.product.price) 원")
-                Text("")
-                    
-
+//                Text("닉네임,사는 동네,매너온도,글 제목, 카테고리, 올린 시각, 글 내용, 가격, 가격 제안 가능 여부")
+                Text(Author.nickname)
+                Text(Author.location)
+                Text(Author.mannerTemperture)
+                Text(Post.title)
+                Text(Product.category)
+                Text(Carrot.createdTime)
+                Text(Post.content)
+                Text(Product.price)
+                Text(Carrot.isPriceOfferAvailable)
                 
-                
-            
             }
-            Spacer()
         }
-//
     }
+
+//
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(carrot: carrots[0])
+        DetailView()
+//        DetailView(carrot: carrots[0])
     }
 }
 //NavigationView{

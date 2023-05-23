@@ -18,6 +18,7 @@
 		044C525A2A1AF5060028E305 /* carrotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52592A1AF5060028E305 /* carrotRow.swift */; };
 		044C525C2A1B033F0028E305 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C525B2A1B033E0028E305 /* DetailView.swift */; };
 		044C525E2A1B07420028E305 /* page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C525D2A1B07420028E305 /* page.swift */; };
+		6E3972ED2A1C4B1700EC53D6 /* CarrotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3972EC2A1C4B1700EC53D6 /* CarrotListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		044C52592A1AF5060028E305 /* carrotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrotRow.swift; sourceTree = "<group>"; };
 		044C525B2A1B033E0028E305 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		044C525D2A1B07420028E305 /* page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page.swift; sourceTree = "<group>"; };
+		6E3972EC2A1C4B1700EC53D6 /* CarrotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				044C525F2A1B0BCE0028E305 /* Views */,
 				044C525B2A1B033E0028E305 /* DetailView.swift */,
 				044C52592A1AF5060028E305 /* carrotRow.swift */,
+				6E3972EC2A1C4B1700EC53D6 /* CarrotListView.swift */,
 				044C525D2A1B07420028E305 /* page.swift */,
 				044C52602A1B0C2C0028E305 /* Recoures */,
 				044C522D2A170E470028E305 /* Assets.xcassets */,
@@ -291,6 +294,7 @@
 				044C525C2A1B033F0028E305 /* DetailView.swift in Sources */,
 				044C525E2A1B07420028E305 /* page.swift in Sources */,
 				044C522A2A170E430028E305 /* FirstAppApp.swift in Sources */,
+				6E3972ED2A1C4B1700EC53D6 /* CarrotListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
