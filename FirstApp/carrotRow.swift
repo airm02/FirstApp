@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct carrotRow: View {
+    //
+    
+    
     var body: some View {
         
         
@@ -15,12 +18,15 @@ struct carrotRow: View {
             Rectangle()
                 .frame(width: 130, height: 130)
                 .cornerRadius(10)
+                .foregroundColor(.gray)
             
                 .padding()
-
+            
             VStack(alignment:.leading){
-                Text("글 제목, 동네, 올린")
+                
+                Text("d")
                 Text("시각, 금액")
+            
             }
             Spacer()
         }

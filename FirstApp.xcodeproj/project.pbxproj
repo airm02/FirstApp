@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		044C522A2A170E430028E305 /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52292A170E430028E305 /* FirstAppApp.swift */; };
-		044C522C2A170E430028E305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C522B2A170E430028E305 /* ContentView.swift */; };
+		044C522C2A170E430028E305 /* Datab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C522B2A170E430028E305 /* Datab.swift */; };
 		044C522E2A170E470028E305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C522D2A170E470028E305 /* Assets.xcassets */; };
 		044C52312A170E470028E305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C52302A170E470028E305 /* Preview Assets.xcassets */; };
 		044C523B2A170E470028E305 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C523A2A170E470028E305 /* FirstAppTests.swift */; };
 		044C52452A170E470028E305 /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52442A170E470028E305 /* FirstAppUITests.swift */; };
 		044C52472A170E470028E305 /* FirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */; };
 		044C52562A1716AE0028E305 /* dealData.json in Resources */ = {isa = PBXBuildFile; fileRef = 044C52552A1716AE0028E305 /* dealData.json */; };
-		044C52582A1717650028E305 /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52572A1717650028E305 /* Carrot.swift */; };
 		044C525A2A1AF5060028E305 /* carrotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C52592A1AF5060028E305 /* carrotRow.swift */; };
 		044C525C2A1B033F0028E305 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C525B2A1B033E0028E305 /* DetailView.swift */; };
+		044C525E2A1B07420028E305 /* page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C525D2A1B07420028E305 /* page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		044C52262A170E430028E305 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C52292A170E430028E305 /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
-		044C522B2A170E430028E305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		044C522B2A170E430028E305 /* Datab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datab.swift; sourceTree = "<group>"; };
 		044C522D2A170E470028E305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044C52302A170E470028E305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		044C52362A170E470028E305 /* FirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +49,9 @@
 		044C52442A170E470028E305 /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		044C52552A1716AE0028E305 /* dealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dealData.json; sourceTree = "<group>"; };
-		044C52572A1717650028E305 /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
 		044C52592A1AF5060028E305 /* carrotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrotRow.swift; sourceTree = "<group>"; };
 		044C525B2A1B033E0028E305 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		044C525D2A1B07420028E305 /* page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +102,14 @@
 		044C52282A170E430028E305 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				044C525B2A1B033E0028E305 /* DetailView.swift */,
 				044C52292A170E430028E305 /* FirstAppApp.swift */,
+				044C522B2A170E430028E305 /* Datab.swift */,
+				044C525F2A1B0BCE0028E305 /* Views */,
+				044C525B2A1B033E0028E305 /* DetailView.swift */,
 				044C52592A1AF5060028E305 /* carrotRow.swift */,
-				044C522B2A170E430028E305 /* ContentView.swift */,
+				044C525D2A1B07420028E305 /* page.swift */,
+				044C52602A1B0C2C0028E305 /* Recoures */,
 				044C522D2A170E470028E305 /* Assets.xcassets */,
-				044C52572A1717650028E305 /* Carrot.swift */,
-				044C522F2A170E470028E305 /* Preview Content */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -117,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				044C52302A170E470028E305 /* Preview Assets.xcassets */,
-				044C52552A1716AE0028E305 /* dealData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -133,10 +133,26 @@
 		044C52432A170E470028E305 /* FirstAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				044C522F2A170E470028E305 /* Preview Content */,
 				044C52442A170E470028E305 /* FirstAppUITests.swift */,
 				044C52462A170E470028E305 /* FirstAppUITestsLaunchTests.swift */,
 			);
 			path = FirstAppUITests;
+			sourceTree = "<group>";
+		};
+		044C525F2A1B0BCE0028E305 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044C52602A1B0C2C0028E305 /* Recoures */ = {
+			isa = PBXGroup;
+			children = (
+				044C52552A1716AE0028E305 /* dealData.json */,
+			);
+			path = Recoures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044C522C2A170E430028E305 /* ContentView.swift in Sources */,
+				044C522C2A170E430028E305 /* Datab.swift in Sources */,
 				044C525A2A1AF5060028E305 /* carrotRow.swift in Sources */,
-				044C52582A1717650028E305 /* Carrot.swift in Sources */,
 				044C525C2A1B033F0028E305 /* DetailView.swift in Sources */,
+				044C525E2A1B07420028E305 /* page.swift in Sources */,
 				044C522A2A170E430028E305 /* FirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +448,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FirstApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -460,7 +475,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FirstApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
