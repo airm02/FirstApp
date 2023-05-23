@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+//struct carrot: View {
+
+    
 struct DetailView: View {
     
     // carrot 프로포티 만들기
-    
+    var carrot: Carrot
+
     var body: some View {
         VStack{
             Rectangle()
@@ -18,16 +22,15 @@ struct DetailView: View {
                 .foregroundColor(.gray)
             
             VStack(alignment:.leading){
-//                Text("닉네임,사는 동네,매너온도,글 제목, 카테고리, 올린 시각, 글 내용, 가격, 가격 제안 가능 여부")
-                Text(Author.nickname)
-                Text(Author.location)
-                Text(Author.mannerTemperture)
-                Text(Post.title)
-                Text(Product.category)
-                Text(Carrot.createdTime)
-                Text(Post.content)
-                Text(Product.price)
-                Text(Carrot.isPriceOfferAvailable)
+                Text(carrot.author.nickname)
+                Text(carrot.author.location)
+                Text("\(carrot.author.mannerTemperature)'c")
+                Text(carrot.post.title)
+                Text(carrot.product.category)
+                Text(carrot.createdTime)
+                Text(carrot.post.content)
+                Text("\(carrot.product.price)")
+                Text("\(carrot.isPriceOfferAvailable.description)")
                 
             }
         }
@@ -38,7 +41,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(carrot:carrots[0])
 //        DetailView(carrot: carrots[0])
     }
 }

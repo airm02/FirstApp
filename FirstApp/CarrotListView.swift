@@ -9,22 +9,21 @@ import SwiftUI
 
 struct CarrotListView: View {
     var body: some View {
-//        carrotRow(carrot: Carrot)
-//        List {
-//            carrotRow(carrot: carrots[0])
-//            carrotRow(carrot: carrots[1])
-//            carrotRow(carrot: carrots[2])
-//
-//        }
-        
-        List(carrots) { carrot in
-            carrotRow(carrot: carrot)
+        NavigationView {
+            List(carrots) { carrot in
+                NavigationLink{
+                    DetailView(carrot:carrot)
+                } label: {
+                    carrotRow(carrot: carrot)
+                }
+            }
+            .navigationTitle("거꾸로캠퍼스")
         }
     }
-}
-
-struct CarrotListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CarrotListView()
+    
+    struct CarrotListView_Previews: PreviewProvider {
+        static var previews: some View {
+            CarrotListView()
+        }
     }
 }
