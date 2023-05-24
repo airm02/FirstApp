@@ -18,7 +18,7 @@ struct DetailView: View {
     var body: some View {
         VStack{
             
-            Image("Image")
+            Image("image")
                 .resizable()
                 .frame(width: 390, height: 390)
             Spacer()
@@ -27,51 +27,62 @@ struct DetailView: View {
                 
                 HStack{
                     Image(systemName: "person.crop.circle")
-//                        .resizable()
+                        .resizable()
+                        .frame(width: 48, height: 48)
+                        .padding(.bottom, 5)
+                        
+                        
+
 //
+                    
                     Text(carrot.author.nickname)
-                        .font(.system(size:14))
+                        .font(.system(size:20))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                        .padding(.bottom, 7)
+                        .padding(.bottom, 5)
                         .lineLimit(1)
                 }
-                
-                
                 Text(carrot.author.location)
                     .font(.system(size:13))
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
-                    .padding(.bottom, 7)
+                    .padding(.bottom, 10)
                     .lineLimit(1)
+                
+                    Divider()
+                
+                    .padding()
                 Text(carrot.post.title)
-                    .font(.system(size:12))
+                    .font(.system(size:19))
                     .fontWeight(.medium)
                     .foregroundColor(.black)
-                    .padding(.bottom, 7)
+                    .padding(.bottom, 30)
                     .lineLimit(1)
+            
                 HStack{
                     Text(carrot.product.category)
                         .font(.system(size:12))
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                        .padding(.bottom, 7)
+                        .padding(.bottom, 30)
                         .lineLimit(1)
                     Text(carrot.createdTime)
                         .font(.system(size:12))
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                        .padding(.bottom, 7)
+                        .padding(.bottom, 30)
                         .lineLimit(1)
                 }
                 Text(carrot.post.content)
                     .font(.system(size:15))
                     .fontWeight(.medium)
                     .foregroundColor(.black)
-                    .padding(.bottom, 7)
+                    .padding(.bottom, 250)
                     .lineLimit(1)
                 //
             }
+            
+            .padding(.leading, 20)
         }
     }
 }
