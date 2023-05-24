@@ -14,19 +14,30 @@ struct DetailView: View {
     
     // carrot 프로포티 만들기
     var carrot: Carrot
-
+    
     var body: some View {
         VStack{
             
-           Image("Image 1")
-
+            Image("Image")
+                .resizable()
+                .frame(width: 390, height: 390)
+            Spacer()
+            
             VStack(alignment:.leading){
-                Text(carrot.author.nickname)
-                    .font(.system(size:14))
-                    .fontWeight(.bold)
-                    .foregroundColor(.black)
-                    .padding(.bottom, 7)
-                    .lineLimit(1)
+                
+                HStack{
+                    Image(systemName: "person.crop.circle")
+//                        .resizable()
+//
+                    Text(carrot.author.nickname)
+                        .font(.system(size:14))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(.bottom, 7)
+                        .lineLimit(1)
+                }
+                
+                
                 Text(carrot.author.location)
                     .font(.system(size:13))
                     .fontWeight(.bold)
@@ -59,7 +70,7 @@ struct DetailView: View {
                     .foregroundColor(.black)
                     .padding(.bottom, 7)
                     .lineLimit(1)
-//
+                //
             }
         }
     }

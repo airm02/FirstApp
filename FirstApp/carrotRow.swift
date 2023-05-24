@@ -13,12 +13,13 @@ struct carrotRow: View {
     var body: some View {
         
         HStack{
-            Image("image")
+            Image("Image 1")
                 .resizable()
+                .scaledToFill()
                 .frame(width: 130, height: 130)
                 .cornerRadius(10)
                 .foregroundColor(.gray)
-                
+            
             
                 .padding()
             
@@ -42,15 +43,27 @@ struct carrotRow: View {
                     .font(.system(size:14))
                     .fontWeight(.bold)
                     .foregroundColor(.black)
-                    .padding(.bottom, 7)
+                    .padding(.bottom, 30)
                     .lineLimit(1)
                 
+                
+                HStack{
+                    Image(systemName: "message")
+                    Text("\(carrot.post.reaction.commentsCount)")
+                        .font(.system(size:12))
+                    Image(systemName: "heart")
+                    Text("\(carrot.post.reaction.heartsCount)")
+                        .font(.system(size:12))
+
+                }
+                .padding(.leading, 70)
+
             }
             .padding(.leading, 9.0)
             .frame(height: 120, alignment: .top)
         }
-        .frame(height: 120, alignment: .center)
-        
+        .padding(.leading, -40)
+        .frame(height: 120, alignment: .leading)
     }
 }
 
