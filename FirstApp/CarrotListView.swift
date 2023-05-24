@@ -17,6 +17,7 @@ struct CarrotListView: View {
                     carrotRow(carrot: carrot)
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("거꾸로캠퍼스")
         }
     }

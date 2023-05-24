@@ -12,16 +12,13 @@ struct carrotRow: View {
     
     var body: some View {
         
-        HStack{
+        HStack(spacing: 16){
             Image("Image 1")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 130, height: 130)
                 .cornerRadius(10)
                 .foregroundColor(.gray)
-            
-            
-                .padding()
             
             VStack(alignment:.leading, spacing: 0){
                 
@@ -47,23 +44,24 @@ struct carrotRow: View {
                     .lineLimit(1)
                 
                 
-                HStack{
-                    Image(systemName: "message")
-                    Text("\(carrot.post.reaction.commentsCount)")
-                        .font(.system(size:12))
-                    Image(systemName: "heart")
-                    Text("\(carrot.post.reaction.heartsCount)")
-                        .font(.system(size:12))
-
+                HStack {
+                    Spacer()
+                    HStack(spacing: 2){
+                        Image(systemName: "message")
+                        Text("\(carrot.post.reaction.commentsCount) ")
+                        Image(systemName: "heart")
+                        Text("\(carrot.post.reaction.heartsCount)")
+                        
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.gray)
                 }
-                .padding(.leading, 70)
-
+                
             }
-            .padding(.leading, 9.0)
             .frame(height: 120, alignment: .top)
         }
-        .padding(.leading, -40)
         .frame(height: 120, alignment: .leading)
+        .padding()
     }
 }
 

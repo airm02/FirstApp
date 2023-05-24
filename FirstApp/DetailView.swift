@@ -18,7 +18,7 @@ struct DetailView: View {
     var body: some View {
         VStack{
             
-            Image("image")
+            Image("Image")
                 .resizable()
                 .frame(width: 390, height: 390)
             Spacer()
