@@ -17,26 +17,52 @@ struct DetailView: View {
 
     var body: some View {
         VStack{
-            Rectangle()
-                .frame(width: 200, height: 200)
-                .foregroundColor(.gray)
             
+           Image("Image 1")
+
             VStack(alignment:.leading){
                 Text(carrot.author.nickname)
+                    .font(.system(size:14))
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
                 Text(carrot.author.location)
-                Text("\(carrot.author.mannerTemperature)'c")
+                    .font(.system(size:13))
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
                 Text(carrot.post.title)
-                Text(carrot.product.category)
-                Text(carrot.createdTime)
+                    .font(.system(size:12))
+                    .fontWeight(.medium)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
+                HStack{
+                    Text(carrot.product.category)
+                        .font(.system(size:12))
+                        .fontWeight(.bold)
+                        .foregroundColor(.gray)
+                        .padding(.bottom, 7)
+                        .lineLimit(1)
+                    Text(carrot.createdTime)
+                        .font(.system(size:12))
+                        .fontWeight(.bold)
+                        .foregroundColor(.gray)
+                        .padding(.bottom, 7)
+                        .lineLimit(1)
+                }
                 Text(carrot.post.content)
-                Text("\(carrot.product.price)")
-                Text("\(carrot.isPriceOfferAvailable.description)")
-                
+                    .font(.system(size:15))
+                    .fontWeight(.medium)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
+//
             }
         }
     }
-
-//
 }
 
 struct DetailView_Previews: PreviewProvider {
@@ -57,3 +83,12 @@ struct DetailView_Previews: PreviewProvider {
 ////            }
 ////            .navigationTitle("거꾸로캠퍼스")
 ////        }
+
+
+//                Text("\(carrot.author.mannerTemperature)'c")
+//                    .font(.system(size:13))
+//                    .fontWeight(.bold)
+//                    .foregroundColor(.gray)
+//                    .padding(.bottom, 7)
+//                    .lineLimit(1)
+//Text("\(carrot.isPriceOfferAvailable.description)")

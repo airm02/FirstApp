@@ -13,22 +13,44 @@ struct carrotRow: View {
     var body: some View {
         
         HStack{
-            Rectangle()
+            Image("image")
+                .resizable()
                 .frame(width: 130, height: 130)
                 .cornerRadius(10)
                 .foregroundColor(.gray)
+                
             
                 .padding()
             
-            VStack(alignment:.leading){
-
+            VStack(alignment:.leading, spacing: 0){
+                
                 Text(carrot.post.title)
-                Text(carrot.author.location)
+                    .font(.system(size:16))
+                    .fontWeight(.medium)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
+                
+                
+                Text("\(carrot.author.location) · \(carrot.createdTime)")   .font(.system(size:13))
+                    .fontWeight(.regular)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 11)
+                    .lineLimit(1)
+                
                 Text("\(carrot.product.price) 원")
-                Text(carrot.createdTime)
+                    .font(.system(size:14))
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                    .padding(.bottom, 7)
+                    .lineLimit(1)
+                
             }
-            Spacer()
+            .padding(.leading, 9.0)
+            .frame(height: 120, alignment: .top)
         }
+        .frame(height: 120, alignment: .center)
+        
     }
 }
 
